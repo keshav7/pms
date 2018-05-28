@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
-    <modules />
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-datatypes/common-datatypes.iml" filepath="$PROJECT_DIR$/common-datatypes/common-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poseidon/commons/commons.iml" filepath="$PROJECT_DIR$/poseidon/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poseidon/datasources/datasources.iml" filepath="$PROJECT_DIR$/poseidon/datasources/datasources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poseidon/datatypes/datatypes.iml" filepath="$PROJECT_DIR$/poseidon/datatypes/datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ekart-transport.iml" filepath="$PROJECT_DIR$/ekart-transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poseidon/external-api/external-api.iml" filepath="$PROJECT_DIR$/poseidon/external-api/external-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fdpAdapter/fdpAdapter-datatypes/fdpAdapter-datatypes.iml" filepath="$PROJECT_DIR$/fdpAdapter/fdpAdapter-datatypes/fdpAdapter-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fdpAdapter/fdpAdapter-server/fdpAdapter-server.iml" filepath="$PROJECT_DIR$/fdpAdapter/fdpAdapter-server/fdpAdapter-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poseidon/internal-api/internal-api.iml" filepath="$PROJECT_DIR$/poseidon/internal-api/internal-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadManager/loadManager-server/load-core/load-core.iml" filepath="$PROJECT_DIR$/loadManager/loadManager-server/load-core/load-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadManager/loadManager.iml" filepath="$PROJECT_DIR$/loadManager/loadManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadManager/loadManager-client/loadManager-client.iml" filepath="$PROJECT_DIR$/loadManager/loadManager-client/loadManager-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadManager/loadManager-datatypes/loadManager-datatypes.iml" filepath="$PROJECT_DIR$/loadManager/loadManager-datatypes/loadManager-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadManager/loadManager-server/loadManager-server.iml" filepath="$PROJECT_DIR$/loadManager/loadManager-server/loadManager-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms/pms.iml" filepath="$PROJECT_DIR$/pms/pms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms/pms-client/pms-client.iml" filepath="$PROJECT_DIR$/pms/pms-client/pms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms/pms-server/pms-core/pms-core.iml" filepath="$PROJECT_DIR$/pms/pms-server/pms-core/pms-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms/pms-datatypes/pms-datatypes.iml" filepath="$PROJECT_DIR$/pms/pms-datatypes/pms-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms/pms-server/pms-server.iml" filepath="$PROJECT_DIR$/pms/pms-server/pms-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pms/pms-server/pms-wrapper/pms-wrapper.iml" filepath="$PROJECT_DIR$/pms/pms-server/pms-wrapper/pms-wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/requestManager/requestManager-server/request-core/request-core.iml" filepath="$PROJECT_DIR$/requestManager/requestManager-server/request-core/request-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/requestManager/requestManager-server/request-wrapper/request-wrapper.iml" filepath="$PROJECT_DIR$/requestManager/requestManager-server/request-wrapper/request-wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/requestManager/requestManager-client/requestManager-client.iml" filepath="$PROJECT_DIR$/requestManager/requestManager-client/requestManager-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/requestManager/requestManager-datatypes/requestManager-datatypes.iml" filepath="$PROJECT_DIR$/requestManager/requestManager-datatypes/requestManager-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/requestManager/requestManager-server/requestManager-server.iml" filepath="$PROJECT_DIR$/requestManager/requestManager-server/requestManager-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadManager/loadManager-server/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/loadManager/loadManager-server/wrapper/wrapper.iml" />
+    </modules>
   </component>
 </project>
