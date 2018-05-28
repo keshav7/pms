@@ -1,0 +1,63 @@
+group 'com.ekart.transport'
+
+//release
+//version '2.0.1'
+
+//snapshot
+version '1.0.2.64-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    //ART
+    maven { url 'http://10.85.59.116/artifactory/v1.0/artifacts/libs-snapshots-local' }
+    maven { url 'http://10.85.59.116/artifactory/v1.0/artifacts/libs-release-local' }
+
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    baseName = 'pms-datatypes'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (version.endsWith("-SNAPSHOT")){
+                repository(url: "http://10.85.59.116/artifactory/v1.0/artifacts/libs-snapshots-local")
+            }
+            else{
+                repository(url: "http://10.85.59.116/artifactory/v1.0/artifacts/libs-release-local")
+            }
+        }
+    }
+}
+
+dependencies {
+
+//    compile project(':common-datatypes')
+    compile group: 'com.ekart.transport', name: 'common-datatypes', version: '1.0.0.9-SNAPSHOT'
+
+    // Jackson Related
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-json-org', version: jackson_version
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-hppc', version: jackson_version
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-joda', version: jackson_version
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-hibernate4', version: jackson_version
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: jackson_version
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jackson_version
+
+    // Lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: lombok_version
+
+    //Spring Framework for HttpStatus
+    compile group: 'org.springframework', name: 'spring-web' , version: springframework_web_version
+
+    // Javax Validation
+    compile group: 'javax.validation', name: 'validation-api', version: javax_validation_api_version
+}

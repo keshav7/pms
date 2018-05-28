@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+bootRepackage.enabled = false
+
+dependencies {
+    compile group: 'com.ekart.container', name: 'container-datatypes', version: '1.0.0.39-SNAPSHOT'
+    compile group: 'com.ekart.container', name: 'container-client', version: '1.0.6-SNAPSHOT'
+    compile group: 'com.ekart.transport', name: 'requestManager-client', version: '1.1.0.7-SNAPSHOT'
+    compile group: 'com.ekart.transport', name: 'requestManager-datatypes', version: '1.1.0.34-SNAPSHOT'
+}

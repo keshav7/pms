@@ -1,0 +1,65 @@
+group 'com.ekart.transport'
+
+//snapshot
+version '1.0.0.14-SNAPSHOT'
+
+//release
+//version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    //ART
+    maven { url 'http://10.85.59.116/artifactory/v1.0/artifacts/libs-snapshots-local' }
+    maven { url 'http://10.85.59.116/artifactory/v1.0/artifacts/libs-release-local' }
+    mavenLocal()
+    mavenCentral()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (version.endsWith("-SNAPSHOT")){
+                repository(url: "http://10.85.59.116/artifactory/v1.0/artifacts/libs-snapshots-local")
+            }
+            else{
+                repository(url: "http://10.85.59.116/artifactory/v1.0/artifacts/libs-release-local")
+            }
+        }
+    }
+}
+
+configurations {
+    // configuration that holds jars to include in the jar
+    extraLibs
+}
+
+dependencies {
+//    compile project(':loadManager:loadManager-datatypes')
+//    compile project(':common-datatypes')
+    extraLibs group: 'com.ekart.transport', name: 'common-datatypes', version: '1.0.0.11-SNAPSHOT'
+    extraLibs group: 'com.ekart.transport', name: 'loadManager-datatypes', version: '1.0.2.59-SNAPSHOT'
+
+    // Jersey
+    extraLibs group: 'com.sun.jersey', name: 'jersey-client', version: jersey_version
+
+    // SLF4j
+    extraLibs group: 'org.slf4j', name: 'slf4j-api', version: slf4j_version
+    extraLibs group: 'org.slf4j', name: 'log4j-over-slf4j', version: slf4j_version
+    extraLibs group: 'org.slf4j', name: 'jul-to-slf4j', version: slf4j_version
+
+    // Lombok
+    extraLibs group: 'org.projectlombok', name: 'lombok', version: lombok_version
+
+    configurations.compile.extendsFrom(configurations.extraLibs)
+}
+
+jar {
+    into('lib') {
+        from configurations.extraLibs
+    }
+}

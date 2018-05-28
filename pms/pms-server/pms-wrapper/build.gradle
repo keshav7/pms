@@ -1,0 +1,28 @@
+
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+bootRepackage.enabled = true
+
+bootRun {
+    addResources = false
+    jvmArgs = ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5020"]
+}
+
+mainClassName = 'com.ekart.transport.core.Application'
+
+jar {
+    manifest.attributes("Main-Class": mainClassName)
+    baseName = 'ekart-transport-pms'
+    version = '1.0-SNAPSHOT'
+}
+
+dependencies {
+    compile project(':pms:pms-server:pms-core')
+    compile project(':common-datatypes')
+}

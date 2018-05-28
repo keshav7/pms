@@ -1,0 +1,14 @@
+rootProject.name = 'ekart-transport'
+include ':core'
+include ':loadManager'
+
+include ':pms'
+include ':pms:pms-server'
+include ':pms:pms-datatypes'
+include ':pms:pms-client'
+include ':pms:pms-server:pms-core'
+include ':pms:pms-server:pms-wrapper'
+
+
+include ':common-datatypes'
+

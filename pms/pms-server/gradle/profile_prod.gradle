@@ -1,0 +1,25 @@
+apply plugin: 'org.springframework.boot'
+
+ext {
+    logbackLoglevel = "INFO"
+    logpath = "/var/log/ekart/transport/loadManager"
+}
+
+bootRun {
+    args = ["--spring.profiles.active=prod"]
+}
+
+//processResources {
+//    filesMatching('**/logback.xml') {
+//        filter {
+//            it.replace('${logback.loglevel}', logbackLoglevel)
+//                    .replace('${logback.logpath}', logpath)
+//        }
+//    }
+//}
+
+task setProdProperties(dependsOn: bootRun) << {
+    doFirst {
+        System.setProperty('spring.profiles.active', 'prod')
+    }
+}
