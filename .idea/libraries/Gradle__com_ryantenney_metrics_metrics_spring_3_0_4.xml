@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ryantenney.metrics:metrics-spring:3.0.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ryantenney/metrics/metrics-spring/3.0.4/metrics-spring-3.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

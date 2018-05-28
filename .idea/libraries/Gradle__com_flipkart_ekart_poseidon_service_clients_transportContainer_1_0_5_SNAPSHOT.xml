@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.flipkart.ekart.poseidon.service-clients:transportContainer:1.0.5-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.flipkart.ekart.poseidon.service-clients/transportContainer/1.0.5-SNAPSHOT/630d384f3ffb4086069a9f21ccbf727b15144f13/transportContainer-1.0.5-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.flipkart.ekart.poseidon.service-clients/transportContainer/1.0.5-SNAPSHOT/cbc5d83bc3a8d5ba46d9a124793a1f92e7923bc1/transportContainer-1.0.5-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
